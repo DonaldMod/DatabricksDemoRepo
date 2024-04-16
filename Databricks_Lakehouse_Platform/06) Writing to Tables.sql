@@ -6,7 +6,7 @@
 
 -- COMMAND ----------
 
--- MAGIC %run ../Workspace/Repos/donald.modiba@altron.com/Databricks-Certified-Data-Engineer-Associate/Includes/Copy-Datasets
+-- MAGIC %run ../Demo/Course-Materials/Includes/Copy-Datasets
 
 -- COMMAND ----------
 
@@ -38,7 +38,7 @@ DESC HISTORY orders;
 -- COMMAND ----------
 
 INSERT OVERWRITE orders
-SELECT *, current_timestamp() FROM PARQUET.`${dataset.bookstore}/orders/`;
+SELECT *, current_timestamp() as TimesStam FROM PARQUET.`${dataset.bookstore}/orders/`;
 
 -- COMMAND ----------
 

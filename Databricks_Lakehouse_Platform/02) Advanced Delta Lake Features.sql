@@ -53,7 +53,12 @@ DESC HISTORY employees
 
 -- COMMAND ----------
 
+SET spark.databricks.delta.retentionDurationCheck.enabled = false
+
+-- COMMAND ----------
+
 VACUUM employees RETAIN 3 HOURS
+
 
 -- COMMAND ----------
 

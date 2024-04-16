@@ -30,9 +30,10 @@ VALUES (3, 2, 1);
 
 DESC EXTENDED external_default
 
+
 -- COMMAND ----------
 
-DROP TABLE managed_default
+-- MAGIC %fs ls dbfs:/mnt/
 
 -- COMMAND ----------
 
@@ -93,10 +94,6 @@ DROP TABLE external_new_default
 
 -- COMMAND ----------
 
--- MAGIC %fs ls 'dbfs:/user/hive/warehouse/new_default.db/managed_new_default'
-
--- COMMAND ----------
-
 -- MAGIC %fs ls 'dbfs:/mnt/demo/external_new_default'
 
 -- COMMAND ----------
@@ -144,10 +141,6 @@ DROP TABLE managed_custom
 -- COMMAND ----------
 
 DROP TABLE external_custom
-
--- COMMAND ----------
-
--- MAGIC %fs ls 'dbfs:/Shared/schema/custom.db/managed_custom'
 
 -- COMMAND ----------
 

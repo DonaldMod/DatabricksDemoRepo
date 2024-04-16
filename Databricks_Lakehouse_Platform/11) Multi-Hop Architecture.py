@@ -6,16 +6,11 @@
 
 # COMMAND ----------
 
-# MAGIC %run ../Workspace/Repos/donald.modiba@altron.com/Databricks-Certified-Data-Engineer-Associate/Includes/Copy-Datasets
+# MAGIC %run ../Demo/Course-Materials/Includes/Copy-Datasets
 
 # COMMAND ----------
 
 files = dbutils.fs.ls(f"{dataset_bookstore}/orders-raw")
-display(files)
-
-# COMMAND ----------
-
-files = dbutils.fs.ls("dbfs:/mnt/demo/checkpoints/")
 display(files)
 
 # COMMAND ----------

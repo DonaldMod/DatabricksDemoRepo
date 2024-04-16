@@ -6,7 +6,7 @@
 
 -- COMMAND ----------
 
--- MAGIC %run ../Workspace/Repos/donald.modiba@altron.com/Databricks-Certified-Data-Engineer-Associate/Includes/Copy-Datasets
+-- MAGIC %run ../Demo/Course-Materials/Includes/Copy-Datasets
 
 -- COMMAND ----------
 
